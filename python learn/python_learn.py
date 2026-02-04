@@ -1,12 +1,26 @@
-L = [
-    ['Apple', 'Google', 'Microsoft'],
-    ['Java', 'Python', 'Ruby', 'PHP'],
-    ['Adam', 'Bart', 'Bob']
-]
+class Student1(object):
+    def score_init(self,score):
+        self.score = score
 
-# 打印Apple:
-print(L[0][0])
-# 打印Python:
-print(L[1][1])
-# 打印Bob:
-print(L[2][2])
+    def print_score(self,name):
+        self.name = name
+        print('%s: %s' % (self.name, self.score))
+bart = Student1()
+bart.score_init(99)
+bart.print_score('bart')
+
+class Student(object):
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+    def print_score(std):
+        print('%s: %s' % (std.name, std.score))
+lisa = Student('Lisa Simpson', 87)
+lili = Student('lili Simpson', 87)
+lisa.print_score()
+lili.print_score()
+#和静态语言不同的是，实例可以随时绑定变量
+lisa.age = 25
+print(lisa.age)
+#print(lili.age)
