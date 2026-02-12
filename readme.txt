@@ -15,3 +15,4 @@ rm <file>
 git rm <file>
 git commit -m""
 git checkout -- <file>
+git push -u <origin> <main>
