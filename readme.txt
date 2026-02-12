@@ -15,4 +15,6 @@ rm <file>
 git rm <file>
 git commit -m""
 git checkout -- <file>
+git remote add 远程仓库名 仓库地址
+git remote -v
 git push -u <origin> <main>
